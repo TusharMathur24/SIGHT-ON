@@ -1,0 +1,84 @@
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background: url("{{ url_for('static', filename='Banner.jpg') }}") no-repeat center center/cover, 
+                linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    margin: 20px 0;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #eee;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff5e57;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #e94c47;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+}
