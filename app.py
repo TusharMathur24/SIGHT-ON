@@ -86,11 +86,11 @@ def generate_frames():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 @app.route('/start')
 def start():
-    return redirect(url_for('calculate'))
+    return redirect(url_for('templates/calculate'))
 
 @app.route('/calculate')
 def calculate():
